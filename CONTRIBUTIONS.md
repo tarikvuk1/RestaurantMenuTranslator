@@ -1,7 +1,11 @@
 # Team Contributions
 
-
-
+ ## Lana Hrabac - Dataset Collection and Annotation
+-Collected 10 restaurant menu PDFs for the dataset
+-Created data/raw/menu_sources.csv to document data about restaurants
+-Created data/processed/traditional_dish_glossary_30.csv with 30 dishes and information about each one
+-Defined a menu-level development/test split: 80% development menus and 20% test menus
+-Selected restaurant Dzenita and Luna for test menus
 
 ## Rijad Pleho - Translation and Custom Dish Glossary
 

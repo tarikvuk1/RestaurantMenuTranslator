@@ -1,0 +1,11 @@
+restaurant_name,source_url,file_name,access_date,source_type,usage_permission,dataset_split
+Baoli Dining and Lounge,https://www.baoli.ba/menu.pdf,restaurant_01_menu.pdf,2026-11-21,PDF,unknown,development
+Pivnica Sarajevo,https://www.pivnica-sarajevo.ba/meni.pdf,restaurant_02_menu.pdf,2026-11-21,PDF,unknown,development
+Restoran Dženita,https://restorandzenita.ba/menu.pdf,restaurant_03_menu.pdf,2026-11-21,PDF,unknown,test
+Pivnica Sarajevo 2,https://pivnica-sarajevo.ba/meni-updated.pdf,restaurant_04_menu.pdf,2026-11-21,PDF,unknown,development
+Perla Caffe & Restaurant,https://perlarestoran.ba/meni/pdf/,restaurant_05_menu.pdf,2026-11-21,PDF,unknown,test
+Toplik Village Resort,https://toplikresort.com/meni.pdf,restaurant_06_menu.pdf,2026-11-21,PDF,unknown,development
+Restaurant Libertas,https://libertas.ba/bs/jelovnik,restaurant_07_menu.pdf,2026-11-21,PDF,unknown,development
+Luna,https://luna.ba/restoran/,restaurant_08_menu.pdf,2026-11-21,PDF,unknown,test
+Torpedo,https://torpedo.ba/torpedo-menu.pdf,restaurant_09_menu.pdf,2026-11-21,PDF,unknown,development
+Hotel Europa,https://www.hoteleuropa.ba/wp-content/uploads/2022/03/Hotel-Europa-JELOVNIK-zadnja-verzija-CODUS-1_compressed.pdf,restaurant_10_menu.pdf,2026-11-21,PDF,unknown,development
