@@ -1,7 +1,7 @@
 ﻿original,baseline,dish,description,extra_translation,ingredients,meat,allergens,similarity,method
-Ćevapi sa lukom,The bow with the bow,,The bow with the bow,,,,,,baseline
+Ćevapi sa lukom,The bow with the bow,Ćevapi sa lukom,"Traditional Bosnian grilled minced meat sausages served with chopped raw onions, often accompanied by somun bread.",,"Minced beef, onions, salt, pepper, somun bread",Usually beef,Possible gluten,1.0,glossary
 Klepe sa pavlakom,Strap with a stick,Klepe,Traditional Bosnian dumplings filled with minced meat and served with garlic yogurt sauce.,with sour cream,"Wheat flour, minced beef, onions, garlic, yogurt, sour cream",Usually beef,"Gluten, milk, possible eggs",1.0,glossary
-Burek sa mesom,Burk with meat,,Burk with meat,,,,,,baseline
+Burek sa mesom,Burk with meat,Burek sa mesom,Traditional Bosnian savory pastry made with thin layers of dough filled with seasoned minced meat.,,"Wheat flour, minced beef, onions, oil, salt, pepper",Usually beef,"Gluten, possible eggs",1.0,glossary
 Begova čorba,Beg's soup,Begova čorba,"Traditional creamy Bosnian soup made with chicken, vegetables and okra.",,"Chicken, okra, carrots, celery, flour, cream",Chicken,"Possible gluten, milk, celery",1.0,glossary
 Pileća supa,Chicken soup,,Chicken soup,,,,,,baseline
 Pizza sa sirom,Pizza with cheese,,Pizza with cheese,,,,,,baseline
