@@ -25,3 +25,21 @@
 - "bosnian_dish_glossary_30.csv"
 - "glossary_translation_results.csv"
 - "baseline_results.csv"
+
+
+## Tarik Vuk - OCR Implementation and Text Preprocessing
+
+**Responsibilities:**
+
+- Implemented the OCR module (`src/ocr.py`): PDF page rendering, image preprocessing (grayscale, median denoising, Otsu binarization, automatic inversion of dark pages) and Tesseract OCR with the Croatian language model.
+- Implemented text preprocessing (`src/preprocess.py`): removal of prices, weights, dotted leaders and OCR noise; classification of lines into headers, dishes and descriptions; rule-based language identification (Bosnian / English / German) to drop translated duplicates; extraction of allergen information printed on menus; ALL-CAPS normalization; segmentation into menu items.
+- Produced `data/processed/menu_items.csv` (1,941 Bosnian menu items, 464 from the test menus) used as input for translation and for building the test set.
+- Designed and ran the OCR evaluation (`src/evaluate_ocr.py`): the embedded text layer of 8 menus is used as reference; compared 4 Tesseract configurations with CER, order-independent CER, word recall and diacritic recall.
+- Data analysis (`src/data_analysis.py`): items per menu, language distribution, item length, glossary coverage (tables in `results/`, charts in `figures/`).
+- Added `requirements.txt`, pipeline diagram and run instructions to the README.
+
+**Files contributed:**
+- `src/ocr.py`, `src/preprocess.py`, `src/evaluate_ocr.py`, `src/data_analysis.py`
+- `data/interim/ocr_pages.csv`, `data/processed/menu_items.csv`
+- `results/ocr_eval_pages.csv`, `results/ocr_eval_summary.csv`, `results/items_per_menu.csv`, `results/language_distribution.csv`
+- `figures/*.png`, `requirements.txt`

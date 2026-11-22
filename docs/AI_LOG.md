@@ -17,6 +17,15 @@
 | 2026-11-18 | Rijad Pleho | ChatGPT | "Restaurant_Menu_Translation.ipynb" |I combined the translation model and custom glossary into one pipeline, using AI help for code structure, troubleshooting, and understanding how the components work together. | I executed the integrated function and reviewed its outputs on sample menu items. |
 | 2026-11-18 | Rijad Pleho | ChatGPT | Project documentation | I documented my individual contributions with AI assistance in writing and structuring the English text. | Prepared "CONTRIBUTIONS.md" and the AI usage log. |
 
+## Tarik Vuk - OCR Implementation and Text Preprocessing
+
+| Date | Member | AI Tool | Where Used | How AI Was Used | Result / Verification |
+|---|---|---|---|---|---|
+| 2026-11-22 | Tarik Vuk | Claude | `src/ocr.py` | Asked for an OCR module with PDF rendering, image preprocessing and Tesseract; Claude wrote the first version and suggested using the Croatian model (`hrv`) because of č, ć, š, ž, đ. | Ran it on all 10 menus, checked OCR output page by page. |
+| 2026-11-22 | Tarik Vuk | Claude | `src/preprocess.py` | Claude wrote the cleaning rules, line classification and rule-based language ID; we iterated on the rules after inspecting the output (umlaut-less German, "(" read as "f", allergen lines). | Inspected `menu_items.csv` for several menus; known remaining errors listed in README / paper. |
+| 2026-11-22 | Tarik Vuk | Claude | `src/evaluate_ocr.py`, `src/data_analysis.py` | Claude proposed using the PDF text layer as OCR reference and an order-independent CER, and wrote the evaluation and chart code. | Ran the evaluation (seed 42), checked the numbers in `results/ocr_eval_summary.csv` against per-page results. |
+| 2026-11-22 | Tarik Vuk | Claude | README, CONTRIBUTIONS.md | Drafted the pipeline diagram, run instructions and contribution text. | Reviewed and edited. |
+
 ## Summary of AI Usage
 
 I used ChatGPT as a development assistant through my assigned part of the project. It helped me understand NLP concepts, implement the NLLB-200 translation model, develop the custom glossary matcher, structure Python code, and troubleshoot technical issues.

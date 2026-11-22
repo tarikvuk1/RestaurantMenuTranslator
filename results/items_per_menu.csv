@@ -1,0 +1,11 @@
+menu_id,restaurant,split,pages,items,with_description,glossary_matches
+restaurant_01,Baoli Dining and Lounge,development,15,183,44,3
+restaurant_02,Pivnica Sarajevo,development,16,387,78,6
+restaurant_03,Restoran Dženita,test,18,261,15,11
+restaurant_04,Pivnica Sarajevo 2,development,15,231,33,6
+restaurant_05,Perla Caffe & Restaurant,test,12,99,61,3
+restaurant_06,Toplik Village Resort,development,22,383,92,3
+restaurant_07,Restaurant Libertas,development,1,112,3,3
+restaurant_08,Luna,test,19,104,69,4
+restaurant_09,Torpedo,development,2,49,28,7
+restaurant_10,Hotel Europa,development,9,132,36,1
