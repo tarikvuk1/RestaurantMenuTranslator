@@ -1,0 +1,11 @@
+M3 REVIEW
+All consistency checks passed: True.
+Menu sources: 10; processed rows: 2238; retained candidate items: 1941.
+Retained rows from test-designated menus: 464.
+Current glossary entries: 32 (filename ends in _10).
+Saved OCR evaluation: 84 configuration/page rows; 21 distinct pages.
+Pilot: 27 PDF item references; 25 extracted; 2 missing.
+Matcher exact agreement on extracted pilot items: 24/25.
+The pilot uses assistant-reviewed labels pending team confirmation and is not final project accuracy.
+OCR and NLLB inference were not rerun; saved OCR summary was recomputed from page-level metrics.
+Original source tags are preserved; evaluation/split_manifest.csv defines six train, one validation and three test menus.

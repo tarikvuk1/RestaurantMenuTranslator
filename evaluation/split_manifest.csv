@@ -1,0 +1,11 @@
+﻿menu_id,restaurant,original_split,evaluation_split,reason
+restaurant_01,Baoli Dining and Lounge,development,train,Development/training pool; pretrained model is not fitted here
+restaurant_02,Pivnica Sarajevo,development,train,Development/training pool; pretrained model is not fitted here
+restaurant_03,Restoran Dženita,test,test,Original test assignment preserved
+restaurant_04,Pivnica Sarajevo 2,development,train,Development/training pool; pretrained model is not fitted here
+restaurant_05,Perla Caffe & Restaurant,test,test,Original test assignment preserved
+restaurant_06,Toplik Village Resort,development,validation,Toplik reserved for validation within the development pool
+restaurant_07,Restaurant Libertas,development,train,Development/training pool; pretrained model is not fitted here
+restaurant_08,Luna,test,test,Original test assignment preserved
+restaurant_09,Torpedo,development,train,Development/training pool; pretrained model is not fitted here
+restaurant_10,Hotel Europa,development,train,Development/training pool; pretrained model is not fitted here

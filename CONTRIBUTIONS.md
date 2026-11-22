@@ -43,3 +43,13 @@
 - `data/interim/ocr_pages.csv`, `data/processed/menu_items.csv`
 - `results/ocr_eval_pages.csv`, `results/ocr_eval_summary.csv`, `results/items_per_menu.csv`, `results/language_distribution.csv`
 - `figures/*.png`, `requirements.txt`
+
+## Davud Mahmutović - M3 Evaluation, Testing and Documentation
+
+- Prepared an evaluation script that reproduces text preprocessing and checks the saved dataset tables and OCR summary.
+- Prepared 27 PDF-linked pilot reference items and recorded a false glossary match and two missing extractions.
+- Added an explicit train/development, validation and test manifest, and run instructions in README.md.
+- Executed the M3 review in Google Colab and saved the results. The later file cleanup was rechecked locally by the assistant.
+- Prepared Dataset text for the shared paper and a connection from saved OCR items to the existing translation function. The added NLLB inference cell was not executed during this review.
+
+Files: evaluation/, README.md, Restaurant_Menu_Translation.ipynb. AI assistance is recorded in docs/AI_LOG.md; pilot labels retain their reference provenance.

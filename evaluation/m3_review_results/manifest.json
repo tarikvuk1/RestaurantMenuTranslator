@@ -1,0 +1,24 @@
+{
+  "python_version": "3.12.14",
+  "pandas_version": "3.0.1",
+  "ocr_rerun": false,
+  "nllb_rerun": false,
+  "text_preprocessing_rerun": true,
+  "glossary_rows": 32,
+  "glossary_path": "data/processed/traditional_dish_glossary_10.csv",
+  "runner_sha256": "1b81489af9dcc102f639163cab4027a901f1d1c5a8a52a354799c68f70cfb483",
+  "pilot_sha256": "43dd10c37e90c0603c3382b1828ede0c5b51d646088806a18f451503c4a60706",
+  "split_manifest_sha256": "94b99a32874511a7be0d73307095fe8e11c626bd102494644b7e3c0ab6b765f3",
+  "input_sha256": {
+    "src/preprocess.py": "fa6724c1a97ad1f51f6feb36ee644cd167d81cfacb684132f7b8d1c9f2aab383",
+    "src/data_analysis.py": "3fcd3d74c8996517db0be37ef1e4ae64a7c160f8f19b00fb18493827d050c993",
+    "src/evaluate_ocr.py": "640a4f24f40eccbb9debb3b5b72fa8f58577ee5d183d4032e5528163c2604c7b",
+    "Restaurant_Menu_Translation.ipynb": "ca3827b158612d16e7c75c8afe7f7c96933cb691f402a6eb0d108ff387bff63e",
+    "data/processed/traditional_dish_glossary_10.csv": "068186b3c7ead3dd5eac44252c833021d2607d2d65956c78eb7ab059c20545c3",
+    "data/processed/menu_items.csv": "701388f01e92d440a7492905adc8004a1aa84470279f83458464548c340ab9fd",
+    "data/interim/ocr_pages.csv": "a9ee8d98f188f49449cb905462f5c93ba88db0fb617d95b3f700dbe7e748cdd4",
+    "data/raw/menu_sources.csv": "0e678b3bd0c64fd46402be8efefb90b1f043e95a5fc46a76824cc4f014115593",
+    "results/ocr_eval_pages.csv": "d783d66326299fdc07514f02eb5b36f77eb1762386bdd32dab5e0e517beb3d54",
+    "results/ocr_eval_summary.csv": "f90114dc371b508424c19d23a538ce7485ae22dcab3366fc0c67f27ac8d67ee5"
+  }
+}

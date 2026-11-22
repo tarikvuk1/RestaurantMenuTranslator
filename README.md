@@ -64,3 +64,15 @@ reference words with č/ć/š/ž/đ that OCR returned exactly.
 
 The English model loses every diacritic (Ćevapi → Cevapi), the Croatian model keeps ~90 %.
 `hrv` + binarization is the default configuration of the pipeline.
+
+## M3 evaluation
+
+Run `python evaluation/m3_review.py --repo .` from the repository root. Only pandas is required for this review. It reruns text preprocessing on saved OCR output and verifies the existing data tables and OCR summary; Tesseract and NLLB are not rerun.
+
+`evaluation/M3_Final_Check.ipynb` is the Colab entry point. Upload `RestaurantMenuTranslator_M3.zip` and run both cells. Results and input hashes are saved in `evaluation/m3_review_results/`. The original tables, figures and baseline results remain in `results/` and `figures/`.
+
+`evaluation/pilot_test_v1.csv` contains 27 PDF-linked initial reference items, with AI-assisted provenance recorded. Labels are a first pilot version, not a final independently validated benchmark. The review reports missing extractions separately from incorrect matcher labels.
+
+`evaluation/split_manifest.csv` assigns six menus to train/development, Toplik to validation, and preserves the original three test menus. Original source tags remain unchanged for compatibility; this manifest subdivides the development pool without claiming model training.
+
+The translation notebook loads the packaged 32-entry glossary and includes a final cell connecting three saved OCR items to the existing translation function. That added inference cell has not been executed in this review. AI assistance is documented in `docs/AI_LOG.md`.

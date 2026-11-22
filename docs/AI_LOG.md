@@ -34,3 +34,11 @@ I personally worked in Google Colab, executed and tested the implementation, rev
 
 AI assistance was significant, particularly during code development and debugging. I remained responsible for understanding, testing, and documenting my contribution.
 
+## Davud Mahmutović - Evaluation, Testing and Documentation
+
+| Date | Member | AI Tool | Where Used | How AI Was Used | Result / Verification |
+|---|---|---|---|---|---|
+| 2026-11-22 | Davud Mahmutović | ChatGPT / Codex | Evaluation planning and initial notebooks | I used AI to clarify the M3 evaluation requirements and generate preliminary matcher checks. | Ran the initial notebooks in Google Colab and inspected their outputs. |
+| 2026-11-23 | Davud Mahmutović | ChatGPT / Codex | `evaluation/`, translation notebook | AI generated evaluation checks and draft reference labels, and helped prepare the data split and OCR-to-translation connection. | Six consistency checks passed. Pilot labels require team review; the added translation cell was not executed. |
+| 2026-11-23 | Davud Mahmutović | ChatGPT / Codex | `M3_Final_Check.ipynb` | I used AI guidance to run the evaluation notebook and interpret the displayed tables and error cases. | Executed the notebook in Colab and saved the results. Later file cleanup was rechecked locally by the assistant. |
+| 2026-11-23 | Davud Mahmutović | ChatGPT / Codex | README, CONTRIBUTIONS.md, AI_LOG.md, Dataset draft | I used AI to draft and edit the evaluation documentation, prepare Dataset text and organize the M3 files. | Prepared the documentation and contribution notes; removed redundant helper files. |

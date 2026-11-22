@@ -1,0 +1,11 @@
+{
+  "pilot_references": 27,
+  "extracted_items_assessed": 25,
+  "missing_extractions": 2,
+  "exact_recognition_matches_on_present_items": 24,
+  "tp": 8,
+  "fp": 1,
+  "fn": 0,
+  "threshold": 0.8,
+  "limitation": "Purposive M3 pilot, assistant visual review pending team confirmation; not final held-out accuracy."
+}

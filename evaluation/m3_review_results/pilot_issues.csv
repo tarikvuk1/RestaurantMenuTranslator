@@ -1,0 +1,4 @@
+example_id,menu_id,pdf_file,pdf_page,item_id,reference_name,expected_dishes,source_split,selection,reference_review,extraction_present,ocr_item_text,predicted_dishes,similarity,recognition_exact
+M3P23,restaurant_05,restaurant_05_menu.pdf,5,restaurant_05_1297,Njoke sa piletinom i karijem,[],test,purposive pilot from 4 inspected pages; not representative,AI assistant inspected PDF page rendering; team confirmation pending,True,Njoke sa piletinom i karijem,"[""Wok s piletinom""]",0.85,0
+M3P25,restaurant_08,restaurant_08_menu.pdf,5,,Uštipci od heljde „Vegetariana“,[],test,purposive pilot from 4 inspected pages; not representative,AI assistant inspected PDF page rendering; team confirmation pending,False,,[],,
+M3P26,restaurant_08,restaurant_08_menu.pdf,5,,Uštipci od heljde „Slatki grijeh“,[],test,purposive pilot from 4 inspected pages; not representative,AI assistant inspected PDF page rendering; team confirmation pending,False,,[],,
