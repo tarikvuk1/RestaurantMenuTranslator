@@ -1,7 +1,7 @@
 ﻿original,baseline,dish,description,extra_translation,ingredients,meat,allergens,similarity,method
-Ćevapi sa lukom,The bow with the bow,Ćevapi,"Grilled minced-meat sausages, often served with flatbread and onions",with onions,minced beef or mixed meat; salt; spices,Yes,Wheat/gluten in bread; milk in kajmak if served,1.0,glossary
-Klepe sa pavlakom,Strap with a stick,Klepe,"Boiled meat-filled dumplings, often topped with yogurt or sour cream",with sour cream,wheat dough; minced meat; onion; yogurt or sour cream,Yes,Wheat/gluten; milk; possible egg,1.0,glossary
-Burek sa mesom,Burk with meat,Burek,Baked layered pastry filled with minced meat,with meat,phyllo dough; minced meat; onion; oil,Yes,Wheat/gluten; possible egg or milk,1.0,glossary
-Begova čorba,Beg's soup,Begova čorba,"Rich chicken and vegetable soup, often thickened with okra",,chicken; okra; carrots; celery; broth,Yes,Possible wheat/gluten; milk; egg; celery,1.0,glossary
+Ćevapi sa lukom,The bow with the bow,,The bow with the bow,,,,,,baseline
+Klepe sa pavlakom,Strap with a stick,Klepe,Traditional Bosnian dumplings filled with minced meat and served with garlic yogurt sauce.,with sour cream,"Wheat flour, minced beef, onions, garlic, yogurt, sour cream",Usually beef,"Gluten, milk, possible eggs",1.0,glossary
+Burek sa mesom,Burk with meat,,Burk with meat,,,,,,baseline
+Begova čorba,Beg's soup,Begova čorba,"Traditional creamy Bosnian soup made with chicken, vegetables and okra.",,"Chicken, okra, carrots, celery, flour, cream",Chicken,"Possible gluten, milk, celery",1.0,glossary
 Pileća supa,Chicken soup,,Chicken soup,,,,,,baseline
 Pizza sa sirom,Pizza with cheese,,Pizza with cheese,,,,,,baseline
