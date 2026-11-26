@@ -1,29 +1,3 @@
-"""
-OCR evaluation: how well does Tesseract read Bosnian menus?
-Author: Tarik Vuk
-
-Reference ("ground truth"): 8 of the 10 menu PDFs contain an embedded digital text layer.
-We render those pages to images, OCR the images and compare the OCR output with the
-embedded text. The 2 scanned menus (restaurant_01, restaurant_02) have no reference and are
-not used here.
-
-Compared configurations (2 x 2):
-    language model : 'eng' (default English model) vs 'hrv' (Croatian model, knows č ć š ž đ)
-    preprocessing  : raw rendered image vs grayscale + denoise + Otsu binarization
-
-Metrics per page:
-    cer_ordered   - standard Character Error Rate (Levenshtein distance / reference length).
-                    Sensitive to reading order: multi-column menus are read in a different order
-                    by OCR than they are stored in the PDF, so this value is pessimistic.
-    cer_bow       - CER after sorting the words alphabetically on both sides
-                    ("bag-of-words CER"); measures recognition errors, ignores reading order.
-    word_recall   - share of reference words that appear in the OCR output (multiset match).
-    diacritic_recall - the same, but only for reference words containing č, ć, š, ž or đ.
-
-Usage (from the repository root):
-    python src/evaluate_ocr.py
-"""
-
 import random
 import re
 import unicodedata
@@ -37,13 +11,13 @@ import pandas as pd
 import pymupdf
 
 matplotlib.use("Agg")
-import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.pyplot as plt 
 
-from ocr import ocr_image, preprocess_image, render_pdf_pages  # noqa: E402
+from ocr import ocr_image, preprocess_image, render_pdf_pages  
 
 SEED = 42
-PAGES_PER_MENU = 3            # pages sampled per menu (keeps the runtime around 5 minutes)
-MIN_REFERENCE_CHARS = 100     # skip almost empty pages (covers, photos)
+PAGES_PER_MENU = 3            
+MIN_REFERENCE_CHARS = 100     
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RAW_DIR = REPO_ROOT / "data" / "raw"
@@ -55,7 +29,6 @@ BOSNIAN_CHARS = set("čćšžđČĆŠŽĐ")
 
 
 def normalize_for_eval(text):
-    """Make reference and OCR text comparable: NFC, no dotted leaders, single spaces."""
     text = unicodedata.normalize("NFC", text)
     text = re.sub(r"[.·…_]{3,}", " ", text)
     return re.sub(r"\s+", " ", text).strip()
@@ -87,7 +60,6 @@ def score_page(reference, hypothesis):
 
 
 def select_pages(rng):
-    """Pick up to PAGES_PER_MENU pages with enough reference text from every text-layer menu."""
     sources = pd.read_csv(RAW_DIR / "menu_sources.csv")
     selected = []
     for _, src in sources.iterrows():
@@ -95,7 +67,7 @@ def select_pages(rng):
             texts = [p.get_text() for p in doc]
         candidates = [i for i, t in enumerate(texts) if len(t.strip()) >= MIN_REFERENCE_CHARS]
         if not candidates:
-            continue  # scanned menu, no reference text
+            continue 
         for i in sorted(rng.sample(candidates, min(PAGES_PER_MENU, len(candidates)))):
             selected.append((src["file_name"], src["dataset_split"], i, texts[i]))
     return selected
