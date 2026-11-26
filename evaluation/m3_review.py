@@ -1,7 +1,3 @@
-"""M3 review of saved OCR outputs, preprocessing and the current dish matcher.
-
-Does not run Tesseract or NLLB. PDF-derived pilot labels require team confirmation.
-"""
 import argparse
 import ast
 import contextlib
@@ -77,7 +73,6 @@ def run(repo, out, pilot_path):
     split_summary = splits.groupby('evaluation_split').size().reset_index(name='menus')
     split_summary.to_csv(out/'split_summary.csv',index=False)
 
-    # Rerun text preprocessing on saved OCR, preserving all original source files.
     module_path = repo/'src/preprocess.py'
     spec = importlib.util.spec_from_file_location('team_preprocess', module_path)
     prep = importlib.util.module_from_spec(spec)
@@ -88,7 +83,6 @@ def run(repo, out, pilot_path):
     preprocessing_matches = equal_frames(items, read(prep.OUT_CSV))
     prep.OUT_CSV.unlink()
 
-    # Independently reconstruct the two saved tables without rerunning OCR.
     lang = items['lang'].value_counts().rename_axis('lang').reset_index(name='lines')
     lang['share'] = (lang['lines']/lang['lines'].sum()).round(3)
     env = load_functions(repo/'src/data_analysis.py', ['fold','glossary_hit'])
@@ -99,13 +93,11 @@ def run(repo, out, pilot_path):
              with_description=('description',lambda s:(s!='').sum()),
              glossary_matches=('in_glossary','sum')).reset_index())
 
-    # The original summary is an unweighted mean of page-level scores.
     pages = read(repo/'results/ocr_eval_pages.csv')
     metrics = ['cer_ordered','cer_bow','word_recall','diacritic_recall']
     pages[metrics] = pages[metrics].replace('', pd.NA).apply(pd.to_numeric, errors='raise')
     grouped = pages.groupby(['lang','preprocessing'],sort=False)[metrics].mean().round(3).reset_index()
 
-    # Source references were selected and visually checked separately from this runner.
     pilot = read(pilot_path)
     predictions = []
     tp = fp = fn = exact = assessed = missing = 0
